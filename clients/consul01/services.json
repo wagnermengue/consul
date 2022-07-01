@@ -1,0 +1,20 @@
+{
+    "service": {
+        "id": "nginx",
+        "name": "nginx",
+        "tags": ["web"],
+        "port": 80,
+        "check": {
+            "id": "nginx",
+            "name": "HTTP 80",
+            "http": "http://localhost",
+            "interval": "10s",
+            "timeout": "1s"
+        }
+    },
+    "bind_addr": "172.19.0.5",
+    "data_dir": "/tmp",
+    "node_name": "consulclient01",
+    "retry_join": ["172.19.0.2"],
+    "encrypt": "rx90vG3NSJ+dUulvW2Oz21xt5mTbpNi8zJtdQpFEqKs="
+}

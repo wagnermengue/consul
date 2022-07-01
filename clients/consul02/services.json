@@ -1,0 +1,13 @@
+{
+    "service": {
+        "id": "nginx2",
+        "name": "nginx",
+        "tags": ["web"],
+        "port": 80
+    },
+    "bind_addr": "172.19.0.6",
+    "data_dir": "/tmp",
+    "node_name": "consulclient02",
+    "retry_join": ["172.19.0.2"],
+    "encrypt": "rx90vG3NSJ+dUulvW2Oz21xt5mTbpNi8zJtdQpFEqKs="
+}
